@@ -12,8 +12,8 @@ from typing import Mapping, Any, Union, TypeVar
 
 
 T = TypeVar('T')
-res = Union[Any, T]
-df = Union[T, None]
+df = Union[Any, T]
+res = Union[T, None]
 
 
 def safe_get_value(dct: Mapping, key: Any, default: df = None) -> res:
