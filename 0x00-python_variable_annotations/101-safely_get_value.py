@@ -12,11 +12,11 @@ from typing import Mapping, Any, Union, TypeVar
 
 
 T = TypeVar('T')
-df = Union[Any, T]
-res = Union[T, None]
+Res = Union[Any, T]
+Def = Union[T, None]
 
 
-def safe_get_value(dct: Mapping, key: Any, default: df = None) -> res:
+def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
     ''' Returns the value of a key in a dictionary if it exists,
     otherwise None. '''
     if key in dct:
