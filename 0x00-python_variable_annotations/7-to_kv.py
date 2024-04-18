@@ -11,4 +11,4 @@ from typing import Union, Tuple
 def to_kv(K: str, v: Union[int, float]) -> Tuple[str, float]:
     ''' a type-annotated function to_kv
     '''
-    return (K, float(**v))
+    return (K, float(v*v))
